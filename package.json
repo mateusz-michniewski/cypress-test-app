@@ -1,0 +1,25 @@
+{
+  "name": "cypress-test-app",
+  "version": "1.0.0",
+  "description": "Node backend for displaying prime numbers that are containedin passed number",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateusz-michniewski/cypress-test-app.git"
+  },
+  "author": "Mateusz Michniewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateusz-michniewski/cypress-test-app/issues"
+  },
+  "homepage": "https://github.com/mateusz-michniewski/cypress-test-app#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  }
+}
