@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const { getPrimes } = require('./primeNumCalculator');
+const { getPrimes } = require('./primeCalculator');
 
-app.listen(3001);
+app.listen(5000);
 
 app.get('/:number', (req, res) => {
     console.log('Here');
