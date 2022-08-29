@@ -4,7 +4,9 @@
   "description": "Node backend for displaying prime numbers that are containedin passed number",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "nodemon server.js",
+    "calculate": "node primeCalculator.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,13 @@
   "homepage": "https://github.com/mateusz-michniewski/cypress-test-app#readme",
   "dependencies": {
     "axios": "^0.27.2",
+    "concurrent": "^0.3.2",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "http": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
