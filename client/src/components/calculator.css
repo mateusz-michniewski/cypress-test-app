@@ -1,5 +1,17 @@
+.heading {
+    font-family: Arial, Helvetica, sans-serif;    
+    font-size: 22px;
+    color: rgb(173, 173, 173);
+}
+
 input {
     outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .input {
@@ -8,7 +20,7 @@ input {
     border-width: 0px;
     border-radius: 0px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 20px;
     flex-grow: inherit;
     padding: 10px 10px 10px 10px;
     box-shadow: inset 0 0px 10px #000000;
@@ -19,17 +31,17 @@ input {
 }
 
 .button {
-    width: 50%;
+    width: 54%;
     text-align: center;
     flex-grow: inherit;
     border-style: solid;
     border-color: white;
-    border-radius: 25px;
+    border-radius: 5px;
     margin: 20px 5px 5px 5px;
     padding: 10px 10px 10px 10px;
-    background-color: black;
+    background-color: rgb(34, 34, 34);
     color: white;
-    box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 20px #000000;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -58,7 +70,7 @@ input {
     border-radius: 50%;
     padding: 5px 5px 5px 5px;
     text-align: center;
-    background-color: black;
+    background-color: rgb(33, 33, 33);
     color: white;
     font-size: 25px;
     font-weight: bold;

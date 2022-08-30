@@ -23,7 +23,10 @@ export default class CalculatorContainer extends React.Component {
     }
 
     handleResetInputValue = (event) => {
-        this.setState({ inputValue: 0 });
+        this.setState({
+            numbers: [],
+            inputValue: 0
+        });
     }
 
     render() {
@@ -37,6 +40,7 @@ export default class CalculatorContainer extends React.Component {
                     inputValue={this.state.inputValue}
                     handleChange={this.handleChange}
                     handleSubmit={this.handleSubmit}
+                    handleResetValue={this.handleResetInputValue}
                 /> 
             </div>
         )
