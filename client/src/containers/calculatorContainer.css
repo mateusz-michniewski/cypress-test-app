@@ -1,0 +1,13 @@
+.main-container {
+    padding: 20px 20px 20px 20px;  
+    margin: 50px 50px 50px 50px; 
+    height: 100%;
+    border-color: black;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.header-container {
+    text-align: center;
+    font-family: Arial;
+}

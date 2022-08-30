@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import PrimeCalculator from '../components/calculator';
+import './calculatorContainer.css';
 
 
 export default class CalculatorContainer extends React.Component {
@@ -21,10 +22,16 @@ export default class CalculatorContainer extends React.Component {
             })
     }
 
+    handleResetInputValue = (event) => {
+        this.setState({ inputValue: 0 });
+    }
+
     render() {
         return (
-            <div className >
-                <h1>Prime numbers calculator</h1>
+            <div className='main-container' >
+                <div className='header-container' >
+                    <h1>Prime Numbers Calculator</h1>
+                </div>
                 <PrimeCalculator
                     numbers={this.state.numbers}
                     inputValue={this.state.inputValue}
