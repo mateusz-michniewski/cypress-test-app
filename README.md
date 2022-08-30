@@ -10,3 +10,11 @@ This command runs both backend and frontend of the app.
 3. Open your browser and go to http://localhost:3000
 
 Have fun with the Prime Numbers!
+
+
+
+Testing UI in Cypress
+
+1. cd client
+2. npx cypress open
+
