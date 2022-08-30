@@ -5,7 +5,6 @@ import CalculatorContainer from './containers/calculatorContainer';
 function App() {
   return (
     <div className="App" >
-      <PrimeCalculator />
       <CalculatorContainer />
     </div>
   );

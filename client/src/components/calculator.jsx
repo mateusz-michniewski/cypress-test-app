@@ -1,9 +1,19 @@
 import React from 'react';
 
-const PrimeCalculator = ({ number }) => {
+const PrimeCalculator = ({ numbers, inputValue, handleSubmit, handleChange }) => {
     return (
         <div>
-            <h1>What prime numbers your number contains?</h1>
+            <input
+                type='numbers'
+                name='name'
+                onChange={handleChange}
+                defaultValue=''
+            />
+            <button onClick={handleSubmit} >Reveal Prime numbers</button>
+            <div className="prime-number-wrapper"  >
+                {numbers.map((prime, i) =>
+                    <p className="prime-number" key={i} >{prime}</p>)}
+            </div>
         </div>
     )
 }

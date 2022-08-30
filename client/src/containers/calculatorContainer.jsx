@@ -1,34 +1,36 @@
 import React from 'react';
 import axios from 'axios';
+import PrimeCalculator from '../components/calculator';
 
 
 export default class CalculatorContainer extends React.Component {
     state = {
         numbers: [],
-        inputValue: 100
+        inputValue: 0
     };
 
+    handleChange = (event) => {
+        this.setState({ inputValue: event.target.value })
+    }
 
-
-    componentDidMount() {
+    handleSubmit = (event) => {
         axios.get(`http://localhost:5000/${this.state.inputValue}`)
             .then(res => {
-                console.log('this is the response:', res);
-                console.log('this is res.data:', res.data);
                 const numbers = res.data;
                 this.setState({ numbers });
             })
     }
 
-
-
     render() {
         return (
-            <div>
-                
-                <input type='text' name='name' value={this.state.inputValue} ></input>
-                <button>Show prime numbers!</button>
-                <p>this is the array with primes{this.state.numbers}</p>
+            <div className >
+                <h1>Prime numbers calculator</h1>
+                <PrimeCalculator
+                    numbers={this.state.numbers}
+                    inputValue={this.state.inputValue}
+                    handleChange={this.handleChange}
+                    handleSubmit={this.handleSubmit}
+                /> 
             </div>
         )
     }

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "test",
     "start": "nodemon server.js",
-    "calculate": "node primeCalculator.js"
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm start\" \"npm run client\" "
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "http": "^0.0.1-security"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "concurrently": "^7.3.0"
   }
 }
