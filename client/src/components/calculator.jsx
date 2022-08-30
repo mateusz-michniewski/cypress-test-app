@@ -14,6 +14,8 @@ const PrimeCalculator = ({ numbers, inputValue, handleSubmit, handleChange, hand
                 }
                 { numbers.length > 0 ? null : 
                     <input
+                    min={0}
+                    max={10000}
                     type='number'
                     placeholder='input a number'
                     name='name'
